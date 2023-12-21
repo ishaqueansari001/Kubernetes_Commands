@@ -12,7 +12,7 @@ nano elb-service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: kplabs-loadbalancer
+  name: ansari-loadbalancer
 spec:
   type: LoadBalancer
   ports:
@@ -26,7 +26,7 @@ kubectl apply -f elb-service.yaml
 ```
 #### Step 3: Verify Service Logs
 ```sh
-kubectl describe service kplabs-loadbalancer
+kubectl describe service ansari-loadbalancer
 ```
 
 #### Step 4: Delete the Resources
