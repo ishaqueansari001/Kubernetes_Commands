@@ -37,6 +37,9 @@ spec:
 kubectl apply -f service.yaml
 kubectl get service
 kubectl describe service kplabs-service
+**Before Creating Endpoint lets check connectivity to Service**
+kubectl exec -it frontend-pod -- bash
+curl <SERVICE-IP:8080>
 ```
 #### Step 5: Associate Endpoints with Service
 ```sh
