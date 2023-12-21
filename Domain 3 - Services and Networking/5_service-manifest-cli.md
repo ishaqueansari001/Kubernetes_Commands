@@ -29,7 +29,7 @@ spec:
 ```sh
 kubectl apply -f service-deployment.yaml
 ```
-#### Step 1: Generate Service Manifest - POD
+#### Step 1: Generate Service Manifest - POD (Create a service for a POD)
 ```sh
 kubectl expose pod nginx --name nginx-service --port=80 --target-port=80 --dry-run=client -o yaml
 
@@ -37,14 +37,14 @@ kubectl expose pod nginx --name nginx-service --port=80 --target-port=80 --dry-r
 
 kubectl describe service nginx-svc
 ```
-#### Step 2: Generate NodePort Service Manifest - POD
+#### Step 2: Generate NodePort Service Manifest - POD(Create NodePort service for a POD)
 ```sh
 kubectl expose pod nginx --name nginx-nodeport-service --port=80 --target-port=80 --type=NodePort --dry-run=client -o yaml
 
 kubectl get service
 ```
 
-#### Step 3: Generate  Service Manifest - Deployment
+#### Step 3: Generate  Service Manifest - Deployment (Create a service for a Deployement)
 ```sh
 kubectl expose deployment kplabs-deployment --name nginx-deployment-service --port=80 --target-port=8000
 
