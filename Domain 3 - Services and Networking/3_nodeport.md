@@ -24,7 +24,7 @@ spec:
 ```sh
 kubectl apply -f nodeport.yaml
 ```
-#### Step 3: Verify NodePort
+#### Step 3: Verify NodePort and public Port 
 ```sh
 kubectl get service
 ```
