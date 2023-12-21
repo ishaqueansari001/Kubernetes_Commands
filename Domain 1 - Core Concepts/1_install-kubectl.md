@@ -2,7 +2,7 @@
 
 ### Digital Ocean Referral Code:
 
-https://m.do.co/c/74dcb0137794
+https://m.do.co/c/53e224d79cc
 
 ###  Documentation Link for kubectl
 
