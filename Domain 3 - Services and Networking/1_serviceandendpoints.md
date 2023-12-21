@@ -27,7 +27,7 @@ curl <BACKEND-POD-1-IP>
 apiVersion: v1
 kind: Service
 metadata:
-   name: kplabs-service
+   name: ansari-service
 spec:
    ports:
    - port: 8080
@@ -36,7 +36,7 @@ spec:
 ```
 kubectl apply -f service.yaml
 kubectl get service
-kubectl describe service kplabs-service
+kubectl describe service ansari-service
 **Before Creating Endpoint lets check connectivity to Service**
 kubectl exec -it frontend-pod -- bash
 curl <SERVICE-IP:8080>
@@ -49,7 +49,7 @@ nano endpoint.yaml
 apiVersion: v1
 kind: Endpoints
 metadata:
-  name: kplabs-service
+  name: ansari-service
 subsets:
   - addresses:
       - ip: 10.244.0.23
@@ -61,14 +61,15 @@ kubectl apply -f endpoint.yaml
 ```
 #### Step 6: Test the Connection
 ```sh
+kubectl describe service ansari-service
 kubectl exec -it frontend-pod -- bash
 curl <SERVICE-IP:8080>
 ```
 
 #### Step 7: Delete the Created Resources
 ```sh
-kubectl delete service kplabs-service
-kubectl delete endpoints kplabs-service
+kubectl delete service ansari-service
+kubectl delete endpoints ansari-service
 kubectl delete pod backend-pod-1
 kubectl delete pod backend-pod-2
 kubectl delete pod frontend-pod
