@@ -14,15 +14,12 @@ https://www.udemy.com/course/certified-kubernetes-administrator/?referralCode=70
 | 3 | [Creating our first Deployment][PlDc] |
 | 4 | [Creating our first Deployment-CLI][PlDc] |
 | 5 | [Rolling Back Deployments][PlDc] |
-| 6 | [Important Pointers - Deployments]][PlDc] |
+| 6 | [Important Pointers - Deployments][PlDc] |
 | 7 | [Generating Deployment Manifests via CLI][PlDd] |
-| 8 | [DeamonSet YAML]][PlDc] |
+| 8 | [DeamonSet YAML][PlDc] |
 | 9 | [Overview of NodeSelector][PlDf] |
 | 10 | [Understanding Node Affinity][PlDg] |
 | 11 | [Resource Limits][PlDi] |
-| 9 | [Scheduling Pods without a Scheduler][PlDj] |
-| 10 | [Taints and Tolerations][PlDk] |
-| 11 | [Adapter Pattern][PlDl] |
 
 
 [PlDa]: <./1_labels.md>
@@ -36,7 +33,3 @@ https://www.udemy.com/course/certified-kubernetes-administrator/?referralCode=70
 [PlDf]: <./9_nodeSelector.md>
 [PlDg]: <./10_node-affinity.md>
 [PlDi]: <./11_requests-limits.yaml>
-[PlDh]: <./podaffinity-required.yaml>
-[PlDj]: <./pod-without-scheduler.md>
-[PlDk]: <./taints-tolerations.md>
-[PlDl]: <./adapter.yaml>
