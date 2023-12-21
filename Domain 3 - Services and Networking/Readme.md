@@ -26,11 +26,11 @@ https://www.udemy.com/course/certified-kubernetes-administrator/?referralCode=70
 
 
 
-[PlDa]: <./serviceandendpoints.md>
-[PlDb]: <./service-selector.md>
-[PlDc]: <./nodeport.md>
-[PlDd]: <./loadbalancer.md>
-[PlDe]: <./service-manifest-cli.md>
+[PlDa]: <./1_serviceandendpoints.md>
+[PlDb]: <./2_service-selector.md>
+[PlDc]: <./3_nodeport.md>
+[PlDd]: <./4_loadbalancer.md>
+[PlDe]: <./5_service-manifest-cli.md>
 [PlDf]: <./install-helm.md>      
 [PlDg]: <./first-helm-chart.md>
 [PlDh]: <./ingress.md>
