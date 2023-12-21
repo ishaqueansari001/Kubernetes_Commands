@@ -12,7 +12,7 @@ nano nodeport.yaml
 apiVersion: v1
 kind: Service
 metadata:
-   name: kplabs-nodeport
+   name: ansari-nodeport
 spec:
    selector:
      type: publicpod
